@@ -7,6 +7,7 @@
 本工具通过python3,使得bnu登录网关保持持续在线。默认网络状态查询间隔60秒（每1分钟检查一次，减少信息网络中心负担）
 ## 工具依赖项
 > python，版本要求3.x（推荐**3.6**及以后版本）
+
 > 第三方依赖库**requests**
 ## 各文件说明
 |文件名|用途|
@@ -23,7 +24,7 @@
 > python3 bnu.network.disconnect.py     
 
 ## 附加说明
-将此段代码加入开启启动服务，可以做到开机自动连接网络，并保持登录状态（^_^）。
+将此段代码加入开机启动服务，可以做到开机自动连接网络，并保持登录状态（^_^）。
 > windows下推荐使用[winsw,使用方法详见](https://github.com/kohsuke/winsw/blob/master/doc/installation.md)
 
 > Linux下可将系统命令写到系统启动服务（service），详细请Google/Baidu关键字"Linux Systemd"
