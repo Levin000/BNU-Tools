@@ -1,0 +1,10 @@
+<service>
+    <id>bnu.network</id>
+    <name>bnu.network</name>
+    <description>This service will make bnu nerwork connect auto run after windows boot or reboot</description>
+    <executable>python.exe</executable>
+    <arguments>bnu.network.connect.py</arguments>
+    <onfailure action="restart" delay="60 sec"/>
+    <onfailure action="restart" delay="120 sec"/>
+    <logmode>reset</logmode>
+</service>

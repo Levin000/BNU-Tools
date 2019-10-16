@@ -1,0 +1,15 @@
+[Unit]
+Description=bnu.network.service
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+#启动服务的命令（具体路径需要根据自己的实际路径定制）
+ExecStart=python3 /home/pi/Programs/bnu/connect.py
+ExecStop=/bin/kill $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+
